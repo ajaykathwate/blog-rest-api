@@ -34,6 +34,7 @@ public class SecurityConfig {
 
     @Bean
     public UserDetailsService getUserDetailsService() {
+
         UserDetails user = User.withUsername("ajay")
                 .password(encoder().encode("ajay@123"))
                 .roles("USER")
